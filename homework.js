@@ -42,30 +42,57 @@
 //Задание 2 - Магазин
 
 
-let purchaseAmount = Number(prompt("Введите сумму покупки:"));
+// let purchaseAmount = Number(prompt("Введите сумму покупки:"));
 
 
-let discount = 0;
+// let discount = 0;
 
 
-if (purchaseAmount > 5000) {
-    discount = 20;
-} else if (purchaseAmount > 1000) {
-    discount = 10;
+// if (purchaseAmount > 5000) {
+//     discount = 20;
+// } else if (purchaseAmount > 1000) {
+//     discount = 10;
+// }
+
+
+// let discountAmount = (purchaseAmount * discount) / 100;
+// let finalAmount = purchaseAmount - discountAmount;
+
+
+// let message = `Сумма вашей покупки: ${purchaseAmount} сомов.\n`;
+// if (discount > 0) {
+//     message += `Вам предоставлена скидка: ${discount}%.\n`;
+//     message += `Скидка составила: ${discountAmount} сомов.\n`;
+// }
+// message += `Итоговая стоимость: ${finalAmount} сомов.`;
+
+
+// alert(message);
+
+
+
+
+// Задание: Ромбик в консоли 
+
+
+
+let n = 5; 
+
+
+let i = 1;
+while (i <= n) {
+    let spaces = " ".repeat(n - i); 
+    let stars = "*".repeat(2 * i - 1); 
+    console.log(spaces + stars);
+    i++;
 }
 
-
-let discountAmount = (purchaseAmount * discount) / 100;
-let finalAmount = purchaseAmount - discountAmount;
-
-
-let message = `Сумма вашей покупки: ${purchaseAmount} сомов.\n`;
-if (discount > 0) {
-    message += `Вам предоставлена скидка: ${discount}%.\n`;
-    message += `Скидка составила: ${discountAmount} сомов.\n`;
+// Нижняя часть ромба
+let j = n - 1;
+while (j >= 1) {
+    let spaces = " ".repeat(n - j); 
+    let stars = "*".repeat(2 * j - 1);
+    console.log(spaces + stars);
+    j--;
 }
-message += `Итоговая стоимость: ${finalAmount} сомов.`;
-
-
-alert(message);
 
